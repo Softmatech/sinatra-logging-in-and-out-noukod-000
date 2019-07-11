@@ -11,5 +11,9 @@
 # It's strongly recommended that you check this file into your version control system.
 
 ActiveRecord::Schema.define(version: 20190711153805) do
-
+  create_table "users", force: :cascade do |u|
+    u.string "username"
+    u.string "password"
+    u.decimal "balance"
+  end
 end
